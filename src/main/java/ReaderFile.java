@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class ReaderFile {
     public static void ReadingFile() {
+
         try (FileReader in = new FileReader(Solution.src); BufferedReader bufferReader = new BufferedReader(in)) {
             while (bufferReader.ready())                                            //Читаем из файла по 1 строке
             {
@@ -20,6 +21,11 @@ public class ReaderFile {
 
             }
         } catch (Exception e) {
+            e.printStackTrace();
         }
+    }
+}
 
-    }}
+
+
+
